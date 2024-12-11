@@ -5,7 +5,7 @@ parser.add_argument("Path", help = "path of the video file", type= str)
 parser.add_argument("Background", help = "path of the background image file", type= str )
 args = parser.parse_args()
 
-#back = "C:\\Users\\Lenovo\\OneDrive\\Desktop\\Backgroundimage.jpg"
+#back = ".\\Backgroundimage.jpg"
 background = cv2.imread(args.Background)
 backgr = cv2.cvtColor(background, cv2.COLOR_BGR2GRAY)
 
